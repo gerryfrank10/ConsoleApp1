@@ -6,15 +6,19 @@ namespace ConsoleApp1
     {
         static void Main(String[] args)
         {
-            int a = 10;
-            if (a < 20)
+            //For loop
+            for(int i=0; i<20; i++)
             {
-                Console.WriteLine("A is less than 20 ");
+                Console.WriteLine("The value of i is : {0} ", i);
             }
-            else
+
+            //ForEach loop
+            char[] myArray = { 'H', 'e', 'l', 'l', 'o' };
+            foreach(char ch in myArray)
             {
-                Console.WriteLine("A is not less than 20");
+                Console.WriteLine(ch);
             }
+
         }
     }
 }
