@@ -6,19 +6,10 @@ namespace ConsoleApp1
     {
         static void Main(String[] args)
         {
-            int i = 10;
-            double j = 3.2;
-
-            bool b = true;
-
-            Console.WriteLine(i.ToString());
-            Console.WriteLine(j.ToString());
-            Console.WriteLine(b.ToString());
-
-            Console.WriteLine("Now performing typecasting");
-            int z;
-            z = (int)j;
-            Console.WriteLine("Z is {0}", z.GetType());
+            int num;
+            Console.Write("Enter the number : ");
+            num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("The number is {0}", num);
         }
     }
 }
