@@ -6,10 +6,14 @@ namespace ConsoleApp1
     {
         static void Main(String[] args)
         {
-            int num;
-            Console.Write("Enter the number : ");
-            num = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("The number is {0}", num);
+            const double pi = 3.14;
+
+            double r;
+            Console.Write("Enter the radius of the circle : ");
+            r = Convert.ToDouble(Console.ReadLine());
+
+            double area = pi * r;
+            Console.WriteLine("The area of the circle is {0} ", area);
         }
     }
 }
