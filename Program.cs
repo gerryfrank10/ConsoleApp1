@@ -4,25 +4,24 @@ namespace ConsoleApp1
 {
     class Program
     {
+        struct Books
+        {
+            public String title;
+            public String author;
+            public String genre;
+            public int id;
+        }
         static void Main(String[] args)
         {
-            //For loop
-            for(int i=0; i<20; i++)
-            {
-                Console.WriteLine("The value of i is : {0} ", i);
-            }
+            Books book1;
+            Books book2;
 
-            //Arays
-            int[] p = new int[] { 1, 2, 3, 4 };
-            Console.WriteLine("p for : {0}", p[1]); // we expect 2
+            book1.title = "This time tomorrrow";
+            book1.author = "Medusa";
+            book1.genre = "fiction";
+            book1.id = 1;
 
-            //ForEach loop
-            char[] myArray = { 'H', 'e', 'l', 'l', 'o' };
-            foreach(char ch in myArray)
-            {
-                Console.WriteLine(ch);
-            }
-
+            Console.WriteLine("Book {0} from author {1} is a {2} book ", book1.title, book1.author, book1.genre);
         }
     }
 }
